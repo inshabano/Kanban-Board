@@ -28,7 +28,6 @@ form.addEventListener('submit', (event) => {
     if (task.length) {
         addTaskToLane(task, todo);
         todoItems.push(task); 
-        
         event.target[0].value = ""; 
     }
 });
@@ -60,7 +59,6 @@ function addTaskToLane(task, lane) {
     deleteButton.innerText = 'Delete';
     deleteButton.classList.add('del-btn');
 
-    
     deleteDiv.appendChild(deleteButton);
     deleteDiv.classList.add('delete-div');
     deleteDiv.style.display = 'none'; 
