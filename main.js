@@ -28,7 +28,7 @@ form.addEventListener('submit', (event) => {
     if (task.length) {
         addTaskToLane(task, todo);
         todoItems.push(task); 
-        saveTasksToLocalStorage();
+        
         event.target[0].value = ""; 
     }
 });
@@ -73,7 +73,10 @@ function addTaskToLane(task, lane) {
             deleteDiv.style.display = 'none';
         }
     });
-
+    
+    div.addEventListener('mouseleave', () => {
+        deleteDiv.style.display = 'none';
+    });
     
     deleteButton.addEventListener('click', () => {
         div.remove(); 
