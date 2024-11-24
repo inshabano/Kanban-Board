@@ -97,6 +97,7 @@ body {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     cursor: move;
     transition: all 0.2s ease-in;
+    opacity:100%
     
 }
 .dots {
