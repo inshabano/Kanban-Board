@@ -81,11 +81,11 @@ body {
 }
 
 .task-lane {
-    background-color:rgb(76, 180, 184);
+    background-color:rgb(76, 180, 184,0.7);
     min-height: 70vh;
     padding: 2rem;
     border-radius: 2rem;
-    opacity: 70%;
+    
 }
 .task {
     position: relative;
